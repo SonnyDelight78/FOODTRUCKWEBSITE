@@ -205,7 +205,51 @@
             }
 
         }
+.menu-category {
+    text-align: center;
+    font-size: 25px;
+    margin: 35px 0 20px;
+    color: #7a3f14;
+}
 
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.food-card {
+    background: white;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+    transition: transform .2s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-4px);
+}
+
+.food-card h3 {
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+.food-card p {
+    line-height: 1.4;
+}
+
+@media (max-width: 800px) {
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+}
     </style>
 
 </head>
@@ -266,22 +310,125 @@
 
 </section>
 
-
 <section id="menu">
 
     <h2>Our Menu</h2>
 
-    <div class="menu-images">
+    <h3 class="menu-category">Noodles, Rice & Curries</h3>
 
-        <img
-            src="menu-front.webp"
-            alt="ThaiKung Kitchen menu"
-        >
+    <div class="food-grid">
 
-        <img
-            src="menu-back.webp"
-            alt="ThaiKung Kitchen appetizers and American choices"
-        >
+        <div class="food-card">
+            <h3>Pad Thai</h3>
+            <p>Noodles, egg, bean sprouts, green onion and ground peanuts.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Pad See Ew</h3>
+            <p>Large noodles, egg, broccoli and carrots.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Pad Woon Sen</h3>
+            <p>Glass noodles, egg and mixed vegetables.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Drunken Noodles</h3>
+            <p>Large noodles, bell pepper, onion, broccoli and Thai basil.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Fried Rice</h3>
+            <p>Jasmine rice, egg, onion, tomato and cabbage.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Thai Basil</h3>
+            <p>Rice, onion, bell pepper, green beans, Thai basil and fried egg.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Green Curry</h3>
+            <p>Coconut milk, zucchini, bell pepper, eggplant and Thai basil.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Red Curry</h3>
+            <p>Coconut milk, green beans, bamboo slices and bell pepper.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Panang Curry</h3>
+            <p>Coconut milk, broccoli, zucchini, ground peanuts and bell pepper.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Yum Beef Salad</h3>
+            <p>Sliced beef, cucumber, tomato and red onion on a bed of lettuce.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Pad Cashew Nut</h3>
+            <p>Cashews, bell pepper, onion and spring onion.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Beef Noodle Bowl</h3>
+            <p>Rice noodles, sliced beef, beef balls and vegetables.</p>
+        </div>
+
+    </div>
+
+
+    <h3 class="menu-category">Appetizers</h3>
+
+    <div class="food-grid">
+
+        <div class="food-card">
+            <h3>Potstickers</h3>
+            <p>Steamed or fried. Ground chicken and vegetables in wonton wrap.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Egg Rolls</h3>
+            <p>Glass noodles, cabbage, carrot and onion.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Chicken Nuggets</h3>
+        </div>
+
+        <div class="food-card">
+            <h3>Butterfly Shrimp</h3>
+        </div>
+
+        <div class="food-card">
+            <h3>Mozzarella Sticks</h3>
+        </div>
+
+    </div>
+
+
+    <h3 class="menu-category">American Choices</h3>
+
+    <div class="food-grid">
+
+        <div class="food-card">
+            <h3>Hamburger</h3>
+        </div>
+
+        <div class="food-card">
+            <h3>French Fries</h3>
+        </div>
+
+        <div class="food-card">
+            <h3>Hot Dog</h3>
+        </div>
+
+        <div class="food-card">
+            <h3>Chicken Wings</h3>
+        </div>
 
     </div>
 
