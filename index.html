@@ -1,202 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Mom's Food Truck</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ThaiKung Kitchen</title>
 
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            background: #fffaf3;
+            background: #f3a14b;
             color: #222;
         }
 
         header {
-            background: #111;
-            color: white;
-            padding: 20px;
+            background: white;
+            padding: 15px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,.15);
         }
 
-        header h1 {
-            font-size: 28px;
+        .logo {
+            width: 260px;
+            max-width: 80%;
         }
 
         nav {
-            margin-top: 15px;
+            margin-top: 10px;
         }
 
         nav a {
-            color: white;
             text-decoration: none;
-            margin: 0 10px;
+            color: #333;
             font-weight: bold;
+            margin: 5px 8px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #c32929;
         }
 
         .hero {
             text-align: center;
-            padding: 60px 20px;
+            padding: 70px 20px;
         }
 
-        .hero h2 {
-            font-size: 40px;
+        .hero h1 {
+            font-size: 46px;
             margin-bottom: 15px;
         }
 
+        .thai {
+            color: #2e8b3c;
+        }
+
+        .kung {
+            color: #c62828;
+        }
+
+        .kitchen {
+            color: #8b5a2b;
+        }
+
         .hero p {
-            font-size: 18px;
-            margin-bottom: 25px;
+            max-width: 650px;
+            margin: auto;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        .buttons {
+            margin-top: 30px;
         }
 
         .button {
             display: inline-block;
-            background: #e85d04;
+            background: #c62828;
             color: white;
             padding: 15px 25px;
-            border-radius: 8px;
+            margin: 5px;
+            border-radius: 10px;
             text-decoration: none;
             font-weight: bold;
         }
 
+        .button.secondary {
+            background: #2e8b3c;
+        }
+
         section {
-            padding: 40px 20px;
             max-width: 1000px;
             margin: auto;
+            padding: 50px 20px;
         }
 
         section h2 {
             text-align: center;
-            margin-bottom: 25px;
-            font-size: 30px;
+            font-size: 34px;
+            margin-bottom: 30px;
         }
 
         .card {
             background: white;
-            padding: 25px;
-            border-radius: 12px;
-            margin-bottom: 20px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            padding: 30px;
+            border-radius: 18px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,.12);
         }
 
-        .schedule {
+        .menu-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .menu-images img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,.2);
+        }
+
+        .location {
             text-align: center;
+        }
+
+        .location h3 {
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+
+        .location p {
+            margin: 8px 0;
+            font-size: 18px;
+        }
+
+        .hours {
+            text-align: center;
+        }
+
+        .hours p {
+            font-size: 19px;
+            margin: 8px;
+        }
+
+        .notice {
+            font-size: 14px !important;
+            color: #666;
+            margin-top: 15px !important;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #c62828;
+            font-weight: bold;
+            text-decoration: none;
         }
 
         footer {
-            background: #111;
+            background: #222;
             color: white;
             text-align: center;
-            padding: 25px;
-            margin-top: 30px;
+            padding: 30px 20px;
         }
 
-        @media (max-width: 600px) {
-            .hero h2 {
-                font-size: 32px;
+        @media (max-width: 700px) {
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero {
+                padding: 50px 20px;
+            }
+
+            .menu-images {
+                grid-template-columns: 1fr;
             }
 
             nav a {
-                display: inline-block;
-                margin: 5px;
+                font-size: 14px;
             }
+
         }
+
     </style>
+
 </head>
 
 <body>
 
+
 <header>
-    <h1>MY MOM'S FOOD TRUCK</h1>
+
+    <img
+        src="logo.jpg"
+        alt="ThaiKung Kitchen"
+        class="logo"
+    >
 
     <nav>
         <a href="#home">Home</a>
         <a href="#menu">Menu</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#reviews">Reviews</a>
+        <a href="#location">Find Us</a>
+        <a href="#hours">Hours</a>
+        <a href="#contact">Contact</a>
     </nav>
+
 </header>
 
+
 <section class="hero" id="home">
-    <h2>Good Food. Made Fresh.</h2>
+
+    <h1>
+        <span class="thai">THAI</span><span class="kung">KUNG</span>
+        <span class="kitchen">KITCHEN</span>
+    </h1>
 
     <p>
-        Welcome to our food truck!
-        Check out our menu, find where we're located,
-        and place your pickup order online.
+        Authentic Thai food made fresh in Spring Hill, Florida.
+        Choose from noodles, fried rice, curries, appetizers,
+        American favorites and more.
     </p>
 
-    <a class="button" href="#menu">View Menu</a>
-</section>
+    <div class="buttons">
 
-<section id="menu">
-    <h2>Our Menu</h2>
+        <a
+            href="#menu"
+            class="button"
+        >
+            View Menu
+        </a>
 
-    <div class="card">
-        <h3>Food Item #1</h3>
-        <p>Description of the food item.</p>
-        <br>
-        <strong>$10.00</strong>
-    </div>
-
-    <div class="card">
-        <h3>Food Item #2</h3>
-        <p>Description of the food item.</p>
-        <br>
-        <strong>$12.00</strong>
-    </div>
-
-    <div class="card">
-        <h3>Food Item #3</h3>
-        <p>Description of the food item.</p>
-        <br>
-        <strong>$8.00</strong>
-    </div>
-</section>
-
-<section id="schedule">
-    <h2>Where We'll Be</h2>
-
-    <div class="card schedule">
-        <h3>Today's Location</h3>
-
-        <p>123 Main Street</p>
-        <p>11:00 AM – 7:30 PM</p>
-
-        <br>
-
-        <a class="button"
-           href="https://www.google.com/maps"
-           target="_blank">
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=19951+Bowman+Rd+Spring+Hill+FL"
+            target="_blank"
+            class="button secondary"
+        >
             Get Directions
         </a>
+
     </div>
+
 </section>
 
-<section id="reviews">
-    <h2>Customer Reviews</h2>
 
-    <div class="card">
-        <p>⭐⭐⭐⭐⭐</p>
-        <p>"Amazing food and great service!"</p>
+<section id="menu">
+
+    <h2>Our Menu</h2>
+
+    <div class="menu-images">
+
+        <img
+            src="menu-front.webp"
+            alt="ThaiKung Kitchen menu"
+        >
+
+        <img
+            src="menu-back.webp"
+            alt="ThaiKung Kitchen appetizers and American choices"
+        >
+
     </div>
 
-    <div class="card">
-        <p>⭐⭐⭐⭐⭐</p>
-        <p>"We'll definitely be coming back!"</p>
-    </div>
 </section>
+
+
+<section id="location">
+
+    <h2>Find Us</h2>
+
+    <div class="card location">
+
+        <h3>ThaiKung Kitchen</h3>
+
+        <p>
+            📍 19951 Bowman Rd
+        </p>
+
+        <p>
+            Spring Hill, FL
+        </p>
+
+        <br>
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=19951+Bowman+Rd+Spring+Hill+FL"
+            target="_blank"
+            class="button secondary"
+        >
+            Open in Maps
+        </a>
+
+    </div>
+
+</section>
+
+
+<section id="hours">
+
+    <h2>Hours</h2>
+
+    <div class="card hours">
+
+        <p>
+            <strong>Tuesday – Friday</strong>
+        </p>
+
+        <p>
+            11:00 AM – 7:30 PM
+        </p>
+
+        <p class="notice">
+            Hours may vary due to emergencies,
+            special events, or unforeseen circumstances.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="card contact">
+
+        <p>
+            Have a question about our menu or pickup?
+        </p>
+
+        <br>
+
+        <p>
+            📞
+            <a href="tel:8134527633">
+                813-452-7633
+            </a>
+        </p>
+
+        <br>
+
+        <p>
+            Follow us on Facebook for updates,
+            announcements and schedule changes.
+        </p>
+
+    </div>
+
+</section>
+
 
 <footer>
-    <p>© 2026 My Mom's Food Truck</p>
+
+    <p>
+        © 2026 ThaiKung Kitchen LLC.
+    </p>
+
+    <br>
+
+    <p>
+        Spring Hill, Florida
+    </p>
+
 </footer>
 
+
 </body>
+
 </html>
