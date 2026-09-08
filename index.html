@@ -12,16 +12,17 @@
 
 <meta
     name="description"
-    content="ThaiKung Kitchen - Authentic Thai food in Spring Hill, Florida. Fresh noodles, fried rice, curry, appetizers and more."
+    content="ThaiKung Kitchen - Authentic Thai food in Spring Hill, Florida. Fresh noodles, fried rice, curries, appetizers, drinks and more."
 >
 
 <title>ThaiKung Kitchen | Spring Hill, Florida</title>
 
+
 <style>
 
-/* -------------------- */
+/* ======================================== */
 /* GLOBAL */
-/* -------------------- */
+/* ======================================== */
 
 * {
     box-sizing: border-box;
@@ -41,7 +42,7 @@ body {
         Arial,
         sans-serif;
 
-    background: #fff9f2;
+    background: #fffaf4;
     color: #222;
     line-height: 1.6;
 }
@@ -51,17 +52,17 @@ img {
 }
 
 section {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 125px;
 }
 
 
-/* -------------------- */
+/* ======================================== */
 /* HEADER */
-/* -------------------- */
+/* ======================================== */
 
 header {
 
-    background: rgba(255,255,255,0.97);
+    background: rgba(255,255,255,.98);
 
     position: sticky;
 
@@ -72,7 +73,7 @@ header {
     border-bottom: 1px solid #eee;
 
     box-shadow:
-        0 2px 12px rgba(0,0,0,0.06);
+        0 2px 12px rgba(0,0,0,.06);
 }
 
 .header-inner {
@@ -94,7 +95,7 @@ header {
 
 .logo {
 
-    width: 245px;
+    width: 240px;
 
     display: block;
 }
@@ -103,7 +104,7 @@ nav {
 
     display: flex;
 
-    gap: 6px;
+    gap: 5px;
 
     flex-wrap: wrap;
 
@@ -122,27 +123,27 @@ nav a {
 
     border-radius: 8px;
 
-    transition: 0.2s;
+    transition: .2s;
 }
 
 nav a:hover {
 
     background: #fff0df;
 
-    color: #c92828;
+    color: #c62828;
 }
 
 
-/* -------------------- */
+/* ======================================== */
 /* HERO */
-/* -------------------- */
+/* ======================================== */
 
 .hero {
 
     background:
         linear-gradient(
-            rgba(243, 153, 61, 0.92),
-            rgba(243, 153, 61, 0.92)
+            rgba(245,157,70,.95),
+            rgba(245,157,70,.95)
         );
 
     padding: 85px 20px;
@@ -163,15 +164,15 @@ nav a:hover {
 
     background: white;
 
-    color: #2e873b;
+    color: #267c38;
 
-    padding: 7px 15px;
+    padding: 7px 16px;
 
     border-radius: 999px;
 
-    font-size: 14px;
-
     font-weight: 800;
+
+    font-size: 14px;
 
     margin-bottom: 22px;
 }
@@ -183,8 +184,6 @@ nav a:hover {
     line-height: 1.08;
 
     margin-bottom: 20px;
-
-    color: #222;
 }
 
 .hero p {
@@ -194,8 +193,6 @@ nav a:hover {
     max-width: 720px;
 
     margin: auto;
-
-    color: #282828;
 }
 
 .hero-buttons {
@@ -212,9 +209,9 @@ nav a:hover {
 }
 
 
-/* -------------------- */
+/* ======================================== */
 /* BUTTONS */
-/* -------------------- */
+/* ======================================== */
 
 .button {
 
@@ -234,11 +231,11 @@ nav a:hover {
 
     font-weight: 800;
 
-    transition:
-        transform 0.2s,
-        box-shadow 0.2s;
-
     border: none;
+
+    transition:
+        transform .2s,
+        box-shadow .2s;
 }
 
 .button:hover {
@@ -246,12 +243,12 @@ nav a:hover {
     transform: translateY(-2px);
 
     box-shadow:
-        0 6px 16px rgba(0,0,0,0.15);
+        0 6px 16px rgba(0,0,0,.15);
 }
 
 .button-red {
 
-    background: #c92828;
+    background: #c62828;
 
     color: white;
 }
@@ -265,15 +262,15 @@ nav a:hover {
 
 .button-gold {
 
-    background: #9a672f;
+    background: #986124;
 
     color: white;
 }
 
 
-/* -------------------- */
+/* ======================================== */
 /* QUICK INFO */
-/* -------------------- */
+/* ======================================== */
 
 .quick-info {
 
@@ -281,11 +278,11 @@ nav a:hover {
 
     margin: -38px auto 0;
 
+    padding: 0 20px;
+
     position: relative;
 
-    z-index: 5;
-
-    padding: 0 20px;
+    z-index: 10;
 }
 
 .quick-info-box {
@@ -294,22 +291,22 @@ nav a:hover {
 
     border-radius: 18px;
 
-    box-shadow:
-        0 8px 30px rgba(0,0,0,0.12);
-
     display: grid;
 
     grid-template-columns:
         repeat(3, 1fr);
 
     overflow: hidden;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.12);
 }
 
 .quick-item {
 
-    text-align: center;
-
     padding: 25px 15px;
+
+    text-align: center;
 }
 
 .quick-item:not(:last-child) {
@@ -321,9 +318,9 @@ nav a:hover {
 
     display: block;
 
-    font-size: 17px;
-
     margin-bottom: 5px;
+
+    font-size: 17px;
 }
 
 .quick-item span {
@@ -334,9 +331,9 @@ nav a:hover {
 }
 
 
-/* -------------------- */
-/* GENERAL SECTION */
-/* -------------------- */
+/* ======================================== */
+/* GENERAL SECTIONS */
+/* ======================================== */
 
 .content-section {
 
@@ -356,39 +353,153 @@ nav a:hover {
 
 .section-heading h2 {
 
-    font-size: 38px;
+    font-size: 40px;
 
     margin-bottom: 8px;
 }
 
 .section-heading p {
 
-    color: #666;
-
-    max-width: 650px;
+    max-width: 700px;
 
     margin: auto;
+
+    color: #666;
 }
 
 
-/* -------------------- */
-/* MENU */
-/* -------------------- */
+/* ======================================== */
+/* SPECIAL */
+/* ======================================== */
+
+.special-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff2da,
+            #ffe0ad
+        );
+
+    border: 2px solid #d49a37;
+
+    border-radius: 20px;
+
+    margin-bottom: 45px;
+
+    box-shadow:
+        0 7px 22px rgba(0,0,0,.08);
+
+    overflow: hidden;
+}
+
+.special-card summary {
+
+    cursor: pointer;
+
+    list-style: none;
+
+    padding: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.special-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.special-left {
+
+    text-align: left;
+}
+
+.special-label {
+
+    display: inline-block;
+
+    background: #c62828;
+
+    color: white;
+
+    border-radius: 999px;
+
+    padding: 5px 11px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+.special-card h3 {
+
+    font-size: 27px;
+
+    color: #754419;
+}
+
+.special-price {
+
+    font-size: 24px;
+
+    font-weight: 900;
+
+    color: #267c38;
+
+    white-space: nowrap;
+}
+
+.special-price small {
+
+    display: block;
+
+    font-size: 13px;
+
+    color: #555;
+
+    font-weight: 700;
+}
+
+.special-details {
+
+    background: rgba(255,255,255,.6);
+
+    padding: 0 28px 28px;
+
+    color: #555;
+}
+
+
+/* ======================================== */
+/* MENU CATEGORY */
+/* ======================================== */
 
 .menu-category {
 
-    margin-top: 45px;
+    margin-top: 48px;
 
     margin-bottom: 20px;
 
-    font-size: 25px;
-
-    color: #814d20;
-
     border-left: 5px solid #d49a37;
 
-    padding-left: 12px;
+    padding-left: 13px;
+
+    color: #754419;
+
+    font-size: 26px;
 }
+
+
+/* ======================================== */
+/* CLICKABLE FOOD CARDS */
+/* ======================================== */
 
 .food-grid {
 
@@ -404,18 +515,18 @@ nav a:hover {
 
     background: white;
 
-    border-radius: 16px;
-
-    padding: 22px;
+    border-radius: 17px;
 
     border: 1px solid #eee;
 
+    overflow: hidden;
+
     box-shadow:
-        0 4px 14px rgba(0,0,0,0.06);
+        0 4px 15px rgba(0,0,0,.07);
 
     transition:
-        transform 0.2s,
-        box-shadow 0.2s;
+        transform .2s,
+        box-shadow .2s;
 }
 
 .food-card:hover {
@@ -423,38 +534,218 @@ nav a:hover {
     transform: translateY(-3px);
 
     box-shadow:
-        0 8px 22px rgba(0,0,0,0.1);
+        0 9px 25px rgba(0,0,0,.11);
 }
 
-.food-card h3 {
+.food-card summary {
 
-    color: #c92828;
+    cursor: pointer;
 
-    margin-bottom: 8px;
+    list-style: none;
+
+    padding: 21px;
+
+    min-height: 110px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.food-card summary::-webkit-details-marker {
+
+    display: none;
+}
+
+.food-name {
+
+    text-align: left;
+}
+
+.food-name h3 {
+
+    color: #c62828;
 
     font-size: 20px;
+
+    margin-bottom: 5px;
 }
 
-.food-card p {
+.tap-note {
+
+    font-size: 12px;
+
+    color: #888;
+
+    font-weight: 600;
+}
+
+.food-price {
+
+    text-align: right;
+
+    color: #267c38;
+
+    font-size: 20px;
+
+    font-weight: 900;
+
+    white-space: nowrap;
+}
+
+.food-price small {
+
+    display: block;
+
+    color: #666;
+
+    font-size: 12px;
+
+    margin-top: 2px;
+}
+
+.food-card summary::after {
+
+    content: "＋";
+
+    color: #986124;
+
+    font-size: 18px;
+
+    margin-left: 3px;
+}
+
+.food-card[open] summary::after {
+
+    content: "−";
+}
+
+
+/* ======================================== */
+/* EXPANDED FOOD CONTENT */
+/* ======================================== */
+
+.food-details {
+
+    border-top: 1px solid #eee;
+
+    background: #fffdf9;
+}
+
+.food-photo {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    display: block;
+
+    background: white;
+}
+
+.food-info {
+
+    padding: 20px;
+}
+
+.food-info p {
 
     color: #555;
 
-    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+.protein-box {
+
+    background: #fff3e4;
+
+    border-radius: 10px;
+
+    padding: 13px 15px;
+
+    margin-top: 12px;
+
+    font-size: 14px;
+}
+
+.protein-box strong {
+
+    color: #754419;
 }
 
 
-/* -------------------- */
-/* FULL MENU */
-/* -------------------- */
+/* ======================================== */
+/* DRINKS */
+/* ======================================== */
 
-.full-menu-box {
+.drink-grid {
 
-    margin-top: 55px;
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+.drink-card {
+
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    border: 1px solid #eee;
+
+    box-shadow:
+        0 4px 14px rgba(0,0,0,.06);
 
     text-align: center;
 }
 
-details {
+.drink-card h3 {
+
+    color: #c62828;
+
+    margin-bottom: 8px;
+}
+
+.drink-price {
+
+    color: #267c38;
+
+    font-size: 22px;
+
+    font-weight: 900;
+}
+
+.drink-card p {
+
+    margin-top: 6px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* ======================================== */
+/* ORIGINAL PRINTED MENU */
+/* ======================================== */
+
+.full-menu-box {
+
+    margin-top: 60px;
+}
+
+.full-menu-box details {
 
     background: white;
 
@@ -468,34 +759,32 @@ details {
         0 4px 14px rgba(0,0,0,.06);
 }
 
-summary {
+.full-menu-box summary {
 
     cursor: pointer;
 
+    list-style: none;
+
     padding: 20px;
 
-    font-size: 18px;
+    text-align: center;
 
     font-weight: 800;
 
-    color: #814d20;
-
-    list-style: none;
+    color: #754419;
 }
 
-summary::-webkit-details-marker {
+.full-menu-box summary::-webkit-details-marker {
 
     display: none;
 }
 
-summary::after {
+.full-menu-box summary::after {
 
     content: " +";
-
-    color: #c92828;
 }
 
-details[open] summary::after {
+.full-menu-box details[open] summary::after {
 
     content: " −";
 }
@@ -525,9 +814,9 @@ details[open] summary::after {
 }
 
 
-/* -------------------- */
+/* ======================================== */
 /* LOCATION */
-/* -------------------- */
+/* ======================================== */
 
 .location-section {
 
@@ -548,8 +837,6 @@ details[open] summary::after {
         1fr 1fr;
 
     gap: 30px;
-
-    align-items: stretch;
 }
 
 .location-card {
@@ -607,9 +894,9 @@ details[open] summary::after {
 }
 
 
-/* -------------------- */
+/* ======================================== */
 /* HOURS */
-/* -------------------- */
+/* ======================================== */
 
 .hours-card {
 
@@ -632,6 +919,8 @@ details[open] summary::after {
     display: flex;
 
     justify-content: space-between;
+
+    gap: 15px;
 
     padding: 13px 0;
 
@@ -660,15 +949,15 @@ details[open] summary::after {
 
     border-radius: 6px;
 
-    font-size: 14px;
-
     color: #555;
+
+    font-size: 14px;
 }
 
 
-/* -------------------- */
+/* ======================================== */
 /* CONTACT */
-/* -------------------- */
+/* ======================================== */
 
 .contact-section {
 
@@ -719,9 +1008,9 @@ details[open] summary::after {
 }
 
 
-/* -------------------- */
+/* ======================================== */
 /* FOOTER */
-/* -------------------- */
+/* ======================================== */
 
 footer {
 
@@ -729,7 +1018,7 @@ footer {
 
     color: white;
 
-    padding: 40px 20px;
+    padding: 42px 20px;
 
     text-align: center;
 }
@@ -740,9 +1029,9 @@ footer img {
 
     background: white;
 
-    border-radius: 10px;
-
     padding: 7px;
+
+    border-radius: 10px;
 
     margin-bottom: 18px;
 }
@@ -755,9 +1044,9 @@ footer p {
 }
 
 
-/* -------------------- */
-/* MOBILE */
-/* -------------------- */
+/* ======================================== */
+/* TABLET */
+/* ======================================== */
 
 @media (max-width: 850px) {
 
@@ -765,17 +1054,12 @@ footer p {
 
         flex-direction: column;
 
-        gap: 8px;
+        gap: 7px;
     }
 
     .logo {
 
-        width: 210px;
-    }
-
-    nav {
-
-        width: 100%;
+        width: 205px;
     }
 
     nav a {
@@ -792,7 +1076,7 @@ footer p {
 
     .hero h1 {
 
-        font-size: 38px;
+        font-size: 39px;
     }
 
     .hero p {
@@ -818,6 +1102,12 @@ footer p {
             repeat(2, 1fr);
     }
 
+    .drink-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
     .menu-images {
 
         grid-template-columns: 1fr;
@@ -831,11 +1121,21 @@ footer p {
 }
 
 
+/* ======================================== */
+/* MOBILE */
+/* ======================================== */
+
 @media (max-width: 520px) {
 
     .food-grid {
 
         grid-template-columns: 1fr;
+    }
+
+    .drink-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
     .hero-buttons {
@@ -853,6 +1153,21 @@ footer p {
         font-size: 31px;
     }
 
+    .special-card summary {
+
+        align-items: flex-start;
+    }
+
+    .special-card h3 {
+
+        font-size: 22px;
+    }
+
+    .food-card summary {
+
+        min-height: 95px;
+    }
+
     .location-card {
 
         padding: 26px;
@@ -860,37 +1175,6 @@ footer p {
 
 }
 
-.special-card {
-    background: linear-gradient(135deg, #fff3df, #ffe0b8);
-    border: 2px solid #d49a37;
-    border-radius: 18px;
-    padding: 28px;
-    margin-bottom: 40px;
-    box-shadow: 0 6px 18px rgba(0,0,0,.08);
-    text-align: center;
-}
-
-.special-label {
-    display: inline-block;
-    background: #c92828;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: 800;
-    margin-bottom: 12px;
-}
-
-.special-card h3 {
-    font-size: 26px;
-    color: #814d20;
-    margin-bottom: 8px;
-}
-
-.special-card p {
-    color: #555;
-}    
-    
 </style>
 
 </head>
@@ -899,7 +1183,9 @@ footer p {
 <body>
 
 
+<!-- ===================================== -->
 <!-- HEADER -->
+<!-- ===================================== -->
 
 <header>
 
@@ -945,7 +1231,10 @@ footer p {
 </header>
 
 
+
+<!-- ===================================== -->
 <!-- HERO -->
+<!-- ===================================== -->
 
 <section
     class="hero"
@@ -955,7 +1244,7 @@ footer p {
 <div class="hero-content">
 
     <span class="hero-badge">
-        🇹🇭 Authentic Thai Food • Spring Hill, FL
+        Authentic Thai Food • Spring Hill, FL
     </span>
 
     <h1>
@@ -964,8 +1253,8 @@ footer p {
     </h1>
 
     <p>
-        Noodles, fried rice, curries, appetizers
-        and more prepared fresh at ThaiKung Kitchen.
+        Noodles, fried rice, curries, appetizers,
+        drinks and more prepared fresh at ThaiKung Kitchen.
     </p>
 
 
@@ -978,7 +1267,6 @@ footer p {
             View Menu
         </a>
 
-
         <a
             href="https://www.google.com/maps/search/?api=1&query=19951+Bowman+Rd+Spring+Hill+FL"
             target="_blank"
@@ -987,12 +1275,11 @@ footer p {
             Get Directions
         </a>
 
-
         <a
             href="tel:8134527633"
             class="button button-gold"
         >
-            Call Us
+            Call for Pickup
         </a>
 
     </div>
@@ -1002,12 +1289,14 @@ footer p {
 </section>
 
 
+
+<!-- ===================================== -->
 <!-- QUICK INFO -->
+<!-- ===================================== -->
 
 <div class="quick-info">
 
 <div class="quick-info-box">
-
 
     <div class="quick-item">
 
@@ -1038,22 +1327,24 @@ footer p {
     <div class="quick-item">
 
         <strong>
-            🥡 Pickup
+            🥡 Pickup Orders
         </strong>
 
         <span>
-            Call ahead for pickup
+            Call 813-452-7633
         </span>
 
     </div>
 
-
 </div>
 
 </div>
 
 
+
+<!-- ===================================== -->
 <!-- MENU -->
+<!-- ===================================== -->
 
 <section
     class="content-section"
@@ -1068,20 +1359,74 @@ footer p {
     </h2>
 
     <p>
-        Thai favorites prepared fresh.
-        Curry dishes are served with steamed rice.
+        Tap any food item to see a photo, ingredients
+        and available choices.
     </p>
 
 </div>
 
-<div class="special-card">
-    <span class="special-label">Limited Time Special</span>
-    <h3>Pumpkin Curry 🎃</h3>
-    <p>
-        Seasonal pumpkin curry available for a limited time.
-        Ask about today's availability.
-    </p>
-</div>
+
+
+<!-- ===================================== -->
+<!-- LIMITED TIME SPECIAL -->
+<!-- ===================================== -->
+
+<details class="special-card">
+
+    <summary>
+
+        <div class="special-left">
+
+            <span class="special-label">
+                LIMITED TIME SPECIAL
+            </span>
+
+            <h3>
+                🎃 Pumpkin Curry
+            </h3>
+
+        </div>
+
+        <div class="special-price">
+
+            $14
+
+            <small>
+                Beef $16
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="special-details">
+
+        <p>
+            Seasonal pumpkin curry available for a limited time.
+        </p>
+
+        <div class="protein-box">
+
+            <strong>
+                Protein Choices:
+            </strong>
+
+            Chicken, Pork or Shrimp — $14<br>
+
+            Beef — $16
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- ===================================== -->
+<!-- NOODLES, RICE & CURRIES -->
+<!-- ===================================== -->
 
 <h3 class="menu-category">
     Noodles, Rice & Curries
@@ -1091,177 +1436,790 @@ footer p {
 <div class="food-grid">
 
 
-<div class="food-card">
 
-    <h3>
-        Pad Thai
-    </h3>
+<!-- PAD THAI -->
 
-    <p>
-        Noodles, egg, cabbage, carrots,
-        green onion and ground peanuts.
-    </p>
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Pad Thai
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $14
+
+            <small>
+                Beef $16
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="pad-thai.png"
+            alt="Pad Thai"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Noodles, egg, green onion and ground peanuts.
+            </p>
+
+            <div class="protein-box">
+
+                <strong>
+                    Protein Choices:
+                </strong>
+
+                Chicken, Pork or Shrimp — $14<br>
+
+                Beef — $16
+
+            </div>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- PAD SEE EW -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Pad See Ew
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $14
+
+            <small>
+                Beef $16
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="pad-see-ew.png"
+            alt="Pad See Ew"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Large noodles, egg, broccoli and carrots.
+            </p>
+
+            <div class="protein-box">
+
+                <strong>
+                    Protein Choices:
+                </strong>
+
+                Chicken, Pork or Shrimp — $14<br>
+
+                Beef — $16
+
+            </div>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- PAD WOON SEN -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Pad Woon Sen
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $14
+
+            <small>
+                Beef $16
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="pad-woon-sen.png"
+            alt="Pad Woon Sen"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Glass noodles, egg and mixed vegetables.
+            </p>
+
+            <div class="protein-box">
+
+                <strong>
+                    Protein Choices:
+                </strong>
+
+                Chicken, Pork or Shrimp — $14<br>
+
+                Beef — $16
+
+            </div>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- DRUNKEN NOODLES -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Drunken Noodles
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $14
+
+            <small>
+                Beef $16
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="drunken-noodles.png"
+            alt="Drunken Noodles"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Large noodles, bell pepper,
+                onion, broccoli and Thai basil.
+            </p>
+
+            <div class="protein-box">
+
+                <strong>
+                    Protein Choices:
+                </strong>
+
+                Chicken, Pork or Shrimp — $14<br>
+
+                Beef — $16
+
+            </div>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- FRIED RICE -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Fried Rice
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $14
+
+            <small>
+                Beef $16
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="fried-rice.png"
+            alt="Thai Fried Rice"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Jasmine rice, egg, onion,
+                tomato and cabbage.
+            </p>
+
+            <div class="protein-box">
+
+                <strong>
+                    Protein Choices:
+                </strong>
+
+                Chicken, Pork or Shrimp — $14<br>
+
+                Beef — $16
+
+            </div>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- THAI BASIL -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Thai Basil
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $14
+
+            <small>
+                Beef $16
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="thai-basil.png"
+            alt="Thai Basil"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Rice, onion, bell pepper,
+                green beans, Thai basil and fried egg.
+            </p>
+
+            <div class="protein-box">
+
+                <strong>
+                    Protein Choices:
+                </strong>
+
+                Chicken, Pork or Shrimp — $14<br>
+
+                Beef — $16
+
+            </div>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- GREEN CURRY -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Green Curry
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $14
+
+            <small>
+                Beef $16
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="green-curry.png"
+            alt="Green Curry"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Coconut milk, zucchini, bell pepper,
+                eggplant and Thai basil.
+            </p>
+
+            <p>
+                Served with steamed rice.
+            </p>
+
+            <div class="protein-box">
+
+                <strong>
+                    Protein Choices:
+                </strong>
+
+                Chicken, Pork or Shrimp — $14<br>
+
+                Beef — $16
+
+            </div>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- RED CURRY -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Red Curry
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $14
+
+            <small>
+                Beef $16
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="red-curry.png"
+            alt="Red Curry"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Coconut milk, green beans,
+                bamboo slices and bell pepper.
+            </p>
+
+            <p>
+                Served with steamed rice.
+            </p>
+
+            <div class="protein-box">
+
+                <strong>
+                    Protein Choices:
+                </strong>
+
+                Chicken, Pork or Shrimp — $14<br>
+
+                Beef — $16
+
+            </div>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- PANANG CURRY -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Panang Curry
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $14
+
+            <small>
+                Beef $16
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="panang-curry.png"
+            alt="Panang Curry"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Coconut milk, broccoli, zucchini,
+                ground peanuts and bell pepper.
+            </p>
+
+            <p>
+                Served with steamed rice.
+            </p>
+
+            <div class="protein-box">
+
+                <strong>
+                    Protein Choices:
+                </strong>
+
+                Chicken, Pork or Shrimp — $14<br>
+
+                Beef — $16
+
+            </div>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- YUM BEEF SALAD -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Yum Beef Salad
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+            $8
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="yum-beef-salad.png"
+            alt="Yum Beef Salad"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Sliced beef, cucumber, tomato
+                and red onion on a bed of lettuce.
+            </p>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- PAD CASHEW NUT -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Pad Cashew Nut
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $14
+
+            <small>
+                Beef $16
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="pad-cashew-nut.png"
+            alt="Pad Cashew Nut"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Cashews, bell pepper,
+                onion and spring onion.
+            </p>
+
+            <div class="protein-box">
+
+                <strong>
+                    Protein Choices:
+                </strong>
+
+                Chicken, Pork or Shrimp — $14<br>
+
+                Beef — $16
+
+            </div>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- BEEF BOWL NOODLES -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Beef Bowl Noodles
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+            $12
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="beef-bowl-noodle.png"
+            alt="Beef Bowl Noodles"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Rice noodles, sliced beef,
+                beef balls and vegetables.
+            </p>
+
+        </div>
+
+    </div>
+
+</details>
+
 
 </div>
 
 
-<div class="food-card">
 
-    <h3>
-        Pad Se-Ew
-    </h3>
-
-    <p>
-        Large noodles, egg,
-        broccoli and carrots.
-    </p>
-
-</div>
-
-
-<div class="food-card">
-
-    <h3>
-        Pad Woon Sen
-    </h3>
-
-    <p>
-        Glass noodles, egg
-        and mixed vegetables.
-    </p>
-
-</div>
-
-
-<div class="food-card">
-
-    <h3>
-        Drunken Noodles
-    </h3>
-
-    <p>
-        Large noodles, bell pepper,
-        onion, broccoli and Thai basil.
-    </p>
-
-</div>
-
-
-<div class="food-card">
-
-    <h3>
-        Fried Rice
-    </h3>
-
-    <p>
-        Jasmine rice, egg, onion, carrots,
-        tomato and cabbage.
-    </p>
-
-</div>
-
-
-<div class="food-card">
-
-    <h3>
-        Thai Basil
-    </h3>
-
-    <p>
-        Rice, onion, bell pepper,
-        green beans, Thai basil and fried egg.
-    </p>
-
-</div>
-
-
-<div class="food-card">
-
-    <h3>
-        Green Curry
-    </h3>
-
-    <p>
-        Coconut milk, zucchini,
-        bell pepper, eggplant and Thai basil.
-    </p>
-
-</div>
-
-
-<div class="food-card">
-
-    <h3>
-        Red Curry
-    </h3>
-
-    <p>
-        Coconut milk, green beans,
-        bamboo slices and bell pepper.
-    </p>
-
-</div>
-
-
-<div class="food-card">
-
-    <h3>
-        Panang Curry
-    </h3>
-
-    <p>
-        Coconut milk, broccoli,
-        zucchini, ground peanuts and bell pepper.
-    </p>
-
-</div>
-
-
-<div class="food-card">
-
-    <h3>
-        Yum Beef Salad
-    </h3>
-
-    <p>
-        Sliced beef, cucumber,
-        tomato and red onion on lettuce.
-    </p>
-
-</div>
-
-
-<div class="food-card">
-
-    <h3>
-        Pad Cashew Nut
-    </h3>
-
-    <p>
-        Cashews, bell pepper,
-        onion and spring onion.
-    </p>
-
-</div>
-
-
-<div class="food-card">
-
-    <h3>
-        Beef Noodle Bowl
-    </h3>
-
-    <p>
-        Rice noodles, sliced beef,
-        beef balls and vegetables.
-    </p>
-
-</div>
-
-
-</div>
-
-
+<!-- ===================================== -->
+<!-- APPETIZERS -->
+<!-- ===================================== -->
 
 <h3 class="menu-category">
     Appetizers
@@ -1271,63 +2229,297 @@ footer p {
 <div class="food-grid">
 
 
-<div class="food-card">
 
-    <h3>
-        Potstickers
-    </h3>
+<!-- POTSTICKERS -->
 
-    <p>
-        Steamed or fried.
-        Ground chicken or beef and vegetables
-        in a wonton wrap, served with potsticker sauce.
-    </p>
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Potstickers
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $5
+
+            <small>
+                5 pieces
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="potstickers.png"
+            alt="Potstickers"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                5 potstickers for $5.
+            </p>
+
+            <p>
+                Steamed or fried. Ground chicken
+                and vegetables in a wonton wrap.
+            </p>
+
+            <p>
+                Served with potsticker sauce.
+            </p>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- EGG ROLLS -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Egg Rolls
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $5
+
+            <small>
+                3 pieces
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="egg-rolls.png"
+            alt="Egg Rolls"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                3 egg rolls for $5.
+            </p>
+
+            <p>
+                Glass noodles, cabbage,
+                carrot and onion.
+            </p>
+
+            <p>
+                Served with egg roll sauce.
+            </p>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- CHICKEN NUGGETS -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Chicken Nuggets
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+            $6
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="chicken-nuggets.png"
+            alt="Chicken Nuggets"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Served with French fries.
+            </p>
+
+            <p>
+                Includes ketchup and mayo.
+            </p>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- BUTTERFLY SHRIMP -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Butterfly Shrimp
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+            $7
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="butterfly-shrimp.png"
+            alt="Butterfly Shrimp"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                Served with French fries.
+            </p>
+
+            <p>
+                Includes our egg roll sauce.
+            </p>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- MOZZARELLA STICKS -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Mozzarella Sticks
+            </h3>
+
+            <span class="tap-note">
+                Tap for photo & details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+
+            $3
+
+            <small>
+                5 pieces
+            </small>
+
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <img
+            src="mozzarella-sticks.png"
+            alt="Mozzarella Sticks"
+            class="food-photo"
+            loading="lazy"
+        >
+
+        <div class="food-info">
+
+            <p>
+                5 mozzarella sticks for $3.
+            </p>
+
+        </div>
+
+    </div>
+
+</details>
+
 
 </div>
 
 
-<div class="food-card">
 
-    <h3>
-        Egg Rolls
-    </h3>
-
-    <p>
-        Glass noodles, cabbage,
-        carrot and onion. Served with our egg roll sauce.
-    </p>
-
-</div>
-
-
-<div class="food-card">
-    <h3>Chicken Nuggets</h3>
-    <p>
-        Served with ketchup and mayo.
-    </p>
-</div>
-
-
-<div class="food-card">
-    <h3>Butterfly Shrimp</h3>
-    <p>
-        Served with our egg roll sauce.
-    </p>
-</div>
-
-
-<div class="food-card">
-
-    <h3>
-        Mozzarella Sticks
-    </h3>
-
-</div>
-
-
-</div>
-
-
+<!-- ===================================== -->
+<!-- AMERICAN CHOICES -->
+<!-- ===================================== -->
 
 <h3 class="menu-category">
     American Choices
@@ -1337,50 +2529,171 @@ footer p {
 <div class="food-grid">
 
 
-<div class="food-card">
-    <h3>Hamburger</h3>
-    <p>
-        Served with fries and can be customized however you like.
-    </p>
+
+<!-- HAMBURGER -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                Hamburger
+            </h3>
+
+            <span class="tap-note">
+                Tap for details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+            $8
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <div class="food-info">
+
+            <p>
+                Served with French fries.
+            </p>
+
+            <p>
+                Customize it the way you like.
+            </p>
+
+        </div>
+
+    </div>
+
+</details>
+
+
+
+<!-- FRENCH FRIES -->
+
+<details class="food-card">
+
+    <summary>
+
+        <div class="food-name">
+
+            <h3>
+                French Fries
+            </h3>
+
+            <span class="tap-note">
+                Tap for details
+            </span>
+
+        </div>
+
+        <div class="food-price">
+            $3
+        </div>
+
+    </summary>
+
+
+    <div class="food-details">
+
+        <div class="food-info">
+
+            <p>
+                Served with ketchup and mayo.
+            </p>
+
+        </div>
+
+    </div>
+
+</details>
+
+
 </div>
 
 
-<div class="food-card">
-    <h3>French Fries</h3>
-    <p>
-        Served with ketchup and mayo.
-    </p>
-</div>
 
-
-</div>
+<!-- ===================================== -->
+<!-- DRINKS -->
+<!-- ===================================== -->
 
 <h3 class="menu-category">
     Drinks
 </h3>
 
-<div class="food-grid">
 
-    <div class="food-card">
-        <h3>Thai Tea</h3>
+<div class="drink-grid">
+
+
+    <div class="drink-card">
+
+        <h3>
+            Thai Tea
+        </h3>
+
+        <div class="drink-price">
+            $3
+        </div>
+
     </div>
 
-    <div class="food-card">
-        <h3>Green Tea</h3>
+
+    <div class="drink-card">
+
+        <h3>
+            Green Tea
+        </h3>
+
+        <div class="drink-price">
+            $3
+        </div>
+
     </div>
 
-    <div class="food-card">
-        <h3>Bottled Water</h3>
+
+    <div class="drink-card">
+
+        <h3>
+            Bottled Water
+        </h3>
+
+        <div class="drink-price">
+            $1
+        </div>
+
     </div>
 
-    <div class="food-card">
-        <h3>Sodas</h3>
-        <p>Selection may vary.</p>
+
+    <div class="drink-card">
+
+        <h3>
+            Sodas
+        </h3>
+
+        <div class="drink-price">
+            $1
+        </div>
+
+        <p>
+            Selection may vary.
+        </p>
+
     </div>
+
 
 </div>
 
-<!-- PRINTED MENU -->
+
+
+<!-- ===================================== -->
+<!-- ORIGINAL FULL MENU -->
+<!-- ===================================== -->
 
 <div class="full-menu-box">
 
@@ -1413,7 +2726,9 @@ footer p {
 
 
 
+<!-- ===================================== -->
 <!-- LOCATION -->
+<!-- ===================================== -->
 
 <section
     class="location-section"
@@ -1441,8 +2756,8 @@ footer p {
     </p>
 
     <p>
-        We operate from the same location
-        Tuesday through Friday.
+        ThaiKung Kitchen operates from this
+        location Tuesday through Friday.
     </p>
 
 
@@ -1459,11 +2774,11 @@ footer p {
 
 <div class="map">
 
-<iframe
-    src="https://www.google.com/maps?q=19951+Bowman+Rd,+Spring+Hill,+FL&output=embed"
-    loading="lazy"
-    title="ThaiKung Kitchen location"
-></iframe>
+    <iframe
+        src="https://www.google.com/maps?q=19951+Bowman+Rd,+Spring+Hill,+FL&output=embed"
+        loading="lazy"
+        title="ThaiKung Kitchen location"
+    ></iframe>
 
 </div>
 
@@ -1474,7 +2789,9 @@ footer p {
 
 
 
+<!-- ===================================== -->
 <!-- HOURS -->
+<!-- ===================================== -->
 
 <section
     class="content-section"
@@ -1498,104 +2815,103 @@ footer p {
 <div class="hours-card">
 
 
-<div class="hours-row">
+    <div class="hours-row">
 
-    <strong>
-        Monday
-    </strong>
+        <strong>
+            Monday
+        </strong>
 
-    <span class="closed">
-        Closed
-    </span>
+        <span class="closed">
+            Closed
+        </span>
 
-</div>
-
-
-<div class="hours-row">
-
-    <strong>
-        Tuesday
-    </strong>
-
-    <span>
-        11:00 AM – 7:30 PM
-    </span>
-
-</div>
+    </div>
 
 
-<div class="hours-row">
+    <div class="hours-row">
 
-    <strong>
-        Wednesday
-    </strong>
+        <strong>
+            Tuesday
+        </strong>
 
-    <span>
-        11:00 AM – 7:30 PM
-    </span>
+        <span>
+            11:00 AM – 7:30 PM
+        </span>
 
-</div>
-
-
-<div class="hours-row">
-
-    <strong>
-        Thursday
-    </strong>
-
-    <span>
-        11:00 AM – 7:30 PM
-    </span>
-
-</div>
+    </div>
 
 
-<div class="hours-row">
+    <div class="hours-row">
 
-    <strong>
-        Friday
-    </strong>
+        <strong>
+            Wednesday
+        </strong>
 
-    <span>
-        11:00 AM – 7:30 PM
-    </span>
+        <span>
+            11:00 AM – 7:30 PM
+        </span>
 
-</div>
-
-
-<div class="hours-row">
-
-    <strong>
-        Saturday
-    </strong>
-
-    <span class="closed">
-        Closed
-    </span>
-
-</div>
+    </div>
 
 
-<div class="hours-row">
+    <div class="hours-row">
 
-    <strong>
-        Sunday
-    </strong>
+        <strong>
+            Thursday
+        </strong>
 
-    <span class="closed">
-        Closed
-    </span>
+        <span>
+            11:00 AM – 7:30 PM
+        </span>
 
-</div>
+    </div>
 
 
-<div class="hours-note">
+    <div class="hours-row">
 
-    Hours may occasionally change due to
-    emergencies, holidays, special events
-    or unforeseen circumstances.
+        <strong>
+            Friday
+        </strong>
 
-</div>
+        <span>
+            11:00 AM – 7:30 PM
+        </span>
+
+    </div>
+
+
+    <div class="hours-row">
+
+        <strong>
+            Saturday
+        </strong>
+
+        <span class="closed">
+            Closed
+        </span>
+
+    </div>
+
+
+    <div class="hours-row">
+
+        <strong>
+            Sunday
+        </strong>
+
+        <span class="closed">
+            Closed
+        </span>
+
+    </div>
+
+
+    <div class="hours-note">
+
+        Hours may occasionally change due to emergencies,
+        holidays, special events or unforeseen circumstances.
+
+    </div>
 
 
 </div>
@@ -1604,7 +2920,9 @@ footer p {
 
 
 
+<!-- ===================================== -->
 <!-- CONTACT -->
+<!-- ===================================== -->
 
 <section
     class="contact-section"
@@ -1622,7 +2940,7 @@ footer p {
     </h2>
 
     <p>
-        Questions about the menu or want
+        Questions about the menu or ready
         to place a pickup order?
     </p>
 
@@ -1656,7 +2974,9 @@ footer p {
 
 
 
+<!-- ===================================== -->
 <!-- FOOTER -->
+<!-- ===================================== -->
 
 <footer>
 
